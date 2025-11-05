@@ -187,6 +187,13 @@ html {
   --section-tagline-transform: uppercase;
   --section-title-margin: 0;
   --section-title-color: var(--color-black);
+
+  --section-padding: 5rem 0;
+  --section-header-padding: 0 0 3rem;
+  --section-body-padding: 0 0 3rem;
+  --section-footer-padding: 3rem 0 0;
+  --section-footer-align: center;
+  --footer-padding: 5rem 0 1rem;
 }
 
 body {
@@ -197,17 +204,20 @@ body {
   line-height: var(--line-height-base);
 }
 
-a:link, a:visited {
+a[href] {
   color: var(--text-color);
   text-decoration: none;
+}
+
+a[href]:visited {
   font-style: italic;
 }
 
-a:hover {
+a[href]:hover {
   text-decoration: underline;
 }
 
-a:active {
+a[href]:active {
   background-color: var(--color-light-grey);
 }
 
